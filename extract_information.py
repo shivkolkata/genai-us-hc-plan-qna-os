@@ -68,10 +68,10 @@ def query_data(query):
     print("answer received")
     return as_output, retriever_output
 
-with gr.Blocks(theme=gr.themes.Glass(),title="Question Answering App using MongoDB Atlas Vector Search and RAG (Ask about Medicare advantage plan)") as demo:
+with gr.Blocks(theme=gr.themes.Glass(),title="Question Answering App using Qdrant Vector Search and RAG (Ask about Medicare advantage plan)") as demo:
     gr.Markdown(
         """
-        # Question Answering App using MongoDB Atlas Vector Search and RAG (Ask about Medicare advantage plan)
+        # Question Answering App using Qdrant Vector Search and RAG (Ask about Medicare advantage plan)
         """)
     textbox = gr.Textbox(label="Enter your question", value="What is Medicare advantage ?")
     with gr.Row():
