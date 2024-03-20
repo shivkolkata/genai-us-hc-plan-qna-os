@@ -80,4 +80,4 @@ with gr.Blocks(theme=gr.themes.Glass(),title="Question Answering App using Qdran
         output1 = gr.Textbox(lines=1, max_lines=10, label="Raw Vector Search output")   
         output2 = gr.Textbox(lines=1, max_lines=10, label="LLM output")
     button.click(query_data, textbox, outputs=[output1, output2])
-demo.launch()
+demo.launch(share=True)
